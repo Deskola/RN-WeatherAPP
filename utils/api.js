@@ -22,7 +22,7 @@ export const fetchWeather = async woeid => {
 
 export const fetchWeatherInfo = async city => {
   const response = await fetch(
-      `http://api.weatherstack.com/current?access_key=68c626cc6f1e8d452268a3ad28e076dd&query=${city}`
+    `http://api.weatherstack.com/current?access_key=<YOUR API KEY>&query=${city}`
   );
 
   const { location, current } = await response.json();
